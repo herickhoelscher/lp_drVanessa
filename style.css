@@ -1358,7 +1358,7 @@ a   { text-decoration: none; color: inherit; }
 /* Override padding since margin handles spacing */
 .faq-answer-inner { margin: 0; padding: 0 28px 24px; border-top: 1px solid var(--creme); margin: 0 28px; padding-top: 18px; }
 
-.faq-item.open .faq-answer { max-height: 400px; }
+.faq-item.open .faq-answer { max-height: 600px; }
 .faq-item.open .faq-icon   { transform: rotate(45deg); }
 
 /* =============================================
@@ -1484,6 +1484,192 @@ a   { text-decoration: none; color: inherit; }
 .footer-copy { font-size: .77rem; color: rgba(255,255,255,.28); }
 
 /* =============================================
+   VSL SECTION
+============================================= */
+#vsl {
+  background: var(--verde);
+  padding: 60px 0;
+}
+
+.vsl-wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.vsl-placeholder {
+  background: rgba(0,0,0,.4);
+  border-radius: 16px;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid rgba(255,255,255,.08);
+  cursor: pointer;
+  transition: background .25s;
+}
+
+.vsl-placeholder:hover { background: rgba(0,0,0,.5); }
+
+.vsl-play-btn {
+  width: 76px;
+  height: 76px;
+  background: linear-gradient(135deg, #f47e2b, var(--laranja));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--branco);
+  box-shadow: 0 8px 28px rgba(240,119,34,.45);
+  padding-left: 5px;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.vsl-placeholder:hover .vsl-play-btn {
+  transform: scale(1.08);
+  box-shadow: 0 12px 36px rgba(240,119,34,.55);
+}
+
+.vsl-placeholder p {
+  color: rgba(255,255,255,.7);
+  font-size: .95rem;
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+
+/* =============================================
+   DEPOIMENTOS — PLACEHOLDER PENDENTE
+============================================= */
+.testimonials-pending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 52px 24px;
+  background: var(--branco);
+  border-radius: 14px;
+  border: 2px dashed var(--rosado);
+  max-width: 520px;
+  margin: 32px auto 0;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.pending-icon { font-size: 2rem; }
+
+.testimonials-pending p {
+  font-size: 1rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+/* =============================================
+   OFERTA — MENSAGEM DE LANÇAMENTO
+============================================= */
+.offer-launch-msg {
+  background: linear-gradient(135deg, rgba(27,67,50,.05), rgba(240,119,34,.06));
+  border: 1.5px solid rgba(240,119,34,.28);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.offer-launch-msg p {
+  font-size: .97rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 8px;
+}
+
+.offer-launch-msg p:last-child { margin-bottom: 0; }
+
+.offer-launch-msg strong { color: var(--verde); font-weight: 700; }
+
+/* =============================================
+   PÁGINA DE OBRIGADO
+============================================= */
+#thank-you {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(240,119,34,.07) 0%, transparent 45%),
+    linear-gradient(160deg, var(--creme) 0%, var(--branco) 60%, #f0f8f4 100%);
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.ty-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ty-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #235a40, var(--verde));
+  color: var(--branco);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 40px;
+  margin-bottom: 28px;
+  box-shadow: 0 3px 12px rgba(27,67,50,.25);
+}
+
+.ty-headline {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--verde);
+  margin-bottom: 36px;
+  letter-spacing: -.01em;
+}
+
+.ty-body {
+  max-width: 580px;
+  margin: 0 auto 40px;
+}
+
+.ty-body p {
+  font-size: 1.05rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.ty-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 48px;
+}
+
+.ty-btn { min-width: 320px; }
+
+.ty-signature {
+  border-top: 1px solid var(--rosado);
+  padding-top: 28px;
+}
+
+.ty-signature p {
+  font-size: 1rem;
+  color: var(--text-mid);
+  margin-bottom: 4px;
+}
+
+.ty-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--verde) !important;
+  margin-top: 8px !important;
+}
+
+/* =============================================
    RESPONSIVE — TABLET
 ============================================= */
 @media (max-width: 900px) {
@@ -1557,4 +1743,6 @@ a   { text-decoration: none; color: inherit; }
 
   .pain-transition { padding: 24px 22px; }
   .authority-quote { padding: 18px 20px; }
+  .ty-btn { min-width: auto; width: 100%; }
+  #thank-you { padding: 60px 0; }
 }
