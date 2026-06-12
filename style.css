@@ -1483,6 +1483,20 @@ a   { text-decoration: none; color: inherit; }
 
 .footer-copy { font-size: .77rem; color: rgba(255,255,255,.28); }
 
+.footer-agency {
+  font-size: .72rem;
+  color: rgba(255,255,255,.2);
+  margin-top: 8px;
+}
+
+.footer-agency a {
+  color: rgba(255,255,255,.35);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.footer-agency a:hover { color: var(--rosado); }
+
 /* =============================================
    VSL SECTION
 ============================================= */
