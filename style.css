@@ -1031,6 +1031,8 @@ a   { text-decoration: none; color: inherit; }
   overflow: hidden;
   transition: transform .22s, box-shadow .22s;
   border-bottom: 3px solid var(--laranja);
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-card:hover {
@@ -1065,12 +1067,14 @@ a   { text-decoration: none; color: inherit; }
   line-height: 1.75;
   position: relative;
   z-index: 1;
+  flex: 1;
 }
 
 .testimonial-author {
   display: flex;
   align-items: center;
   gap: 14px;
+  margin-top: auto;
 }
 
 .author-avatar {
