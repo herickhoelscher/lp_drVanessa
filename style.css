@@ -22,15 +22,17 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 16px;
+  font-weight: 600;
   color: var(--text-dark);
   background: var(--branco);
   line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -69,7 +71,7 @@ a   { text-decoration: none; color: inherit; }
   display: inline-block;
   padding: 18px 36px;
   border-radius: 8px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: .06em;
@@ -423,7 +425,7 @@ a   { text-decoration: none; color: inherit; }
   content: '"';
   position: absolute;
   top: -12px; left: 24px;
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 5rem;
   color: rgba(240,119,34,.15);
   line-height: 1;
@@ -582,7 +584,7 @@ a   { text-decoration: none; color: inherit; }
   content: '"';
   position: absolute;
   top: -8px; right: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 5rem;
   color: rgba(240,119,34,.2);
   line-height: 1;
@@ -590,7 +592,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .authority-quote p {
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 1.2rem;
   font-style: italic;
   opacity: 1;
@@ -690,7 +692,7 @@ a   { text-decoration: none; color: inherit; }
   position: absolute;
   right: -14px;
   bottom: -28px;
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 7.5rem;
   font-weight: 800;
   color: rgba(27,67,50,.055);
@@ -714,7 +716,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .module-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 1.18rem;
   color: var(--verde);
   margin-bottom: 12px;
@@ -748,7 +750,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .bonus-box h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 1.35rem;
   color: var(--rosado);
   margin-bottom: 24px;
@@ -863,7 +865,7 @@ a   { text-decoration: none; color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   display: block;
 }
 
@@ -931,7 +933,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .profile-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 1.35rem;
   color: var(--verde);
   margin-bottom: 14px;
@@ -964,7 +966,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .not-for-box h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 1.5rem;
   color: var(--rosado);
   margin-bottom: 20px;
@@ -1045,7 +1047,7 @@ a   { text-decoration: none; color: inherit; }
   content: '"';
   position: absolute;
   top: 10px; right: 18px;
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 5.5rem;
   color: rgba(240,119,34,.1);
   line-height: 1;
@@ -1162,7 +1164,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .offer-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 1.5rem;
   color: var(--verde);
   margin-bottom: 28px;
@@ -1221,13 +1223,13 @@ a   { text-decoration: none; color: inherit; }
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--verde);
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   letter-spacing: -.01em;
 }
 
 .price-installment span {
   font-size: 1rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-weight: 500;
   color: var(--text-mid);
 }
@@ -1324,7 +1326,7 @@ a   { text-decoration: none; color: inherit; }
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: .98rem;
   font-weight: 600;
   color: var(--verde);
@@ -1523,47 +1525,12 @@ a   { text-decoration: none; color: inherit; }
   margin: 0 auto;
 }
 
-.vsl-placeholder {
-  background: rgba(0,0,0,.4);
+.vsl-video {
+  width: 100%;
   border-radius: 16px;
-  aspect-ratio: 16/9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  border: 2px solid rgba(255,255,255,.08);
-  cursor: pointer;
-  transition: background .25s;
-}
-
-.vsl-placeholder:hover { background: rgba(0,0,0,.5); }
-
-.vsl-play-btn {
-  width: 76px;
-  height: 76px;
-  background: linear-gradient(135deg, #f47e2b, var(--laranja));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  color: var(--branco);
-  box-shadow: 0 8px 28px rgba(240,119,34,.45);
-  padding-left: 5px;
-  transition: transform .2s, box-shadow .2s;
-}
-
-.vsl-placeholder:hover .vsl-play-btn {
-  transform: scale(1.08);
-  box-shadow: 0 12px 36px rgba(240,119,34,.55);
-}
-
-.vsl-placeholder p {
-  color: rgba(255,255,255,.7);
-  font-size: .95rem;
-  font-weight: 500;
-  letter-spacing: .02em;
+  display: block;
+  box-shadow: 0 24px 60px rgba(0,0,0,.35);
+  background: #000;
 }
 
 /* =============================================
@@ -1689,7 +1656,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .ty-name {
-  font-family: 'Playfair Display', serif;
+  font-family: "sweet-sans-pro", sans-serif;
   font-size: 1.3rem;
   font-style: italic;
   color: var(--verde) !important;
@@ -1705,8 +1672,9 @@ a   { text-decoration: none; color: inherit; }
   .hero-img-wrapper {
     flex: none;
     width: 100%;
-    max-width: 480px;
-    height: 340px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
     border-radius: 20px;
   }
 
@@ -1715,13 +1683,14 @@ a   { text-decoration: none; color: inherit; }
   .authority-img-wrapper {
     flex: none;
     width: 100%;
-    max-width: 420px;
-    height: 320px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
     border-radius: 24px;
   }
 
   .modules-grid      { grid-template-columns: repeat(2, 1fr); }
-  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: 1fr; }
   .profiles-grid     { grid-template-columns: 1fr; }
   .not-for-box       { padding: 32px 28px; }
 }
@@ -1754,18 +1723,19 @@ a   { text-decoration: none; color: inherit; }
 
   .hero-img-wrapper {
     max-width: 100%;
-    height: 280px;
+    height: auto;
+    aspect-ratio: 1/1;
     border-radius: 16px;
   }
 
   .authority-img-wrapper {
     max-width: 100%;
-    height: 280px;
+    height: auto;
+    aspect-ratio: 4/3;
     border-radius: 16px;
   }
 
   .offer-card { padding: 36px 22px 28px; }
-  .price-installment { font-size: 1.7rem; }
   .btn-lg { padding: 18px 28px; font-size: .95rem; }
 
   .pain-transition { padding: 24px 22px; }
