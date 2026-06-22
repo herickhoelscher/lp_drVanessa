@@ -1553,7 +1553,7 @@ a   { text-decoration: none; color: inherit; }
 .vsl-video {
   width: auto;
   max-width: 100%;
-  max-height: 500px;
+  max-height: 580px;
   border-radius: 16px;
   display: block;
   box-shadow: 0 24px 60px rgba(0,0,0,.45);
