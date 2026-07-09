@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/empreende/public_html/
+    - /bin/cp -f index.html $DEPLOYPATH
+    - /bin/cp -f agradecimento.html $DEPLOYPATH
+    - /bin/cp -f style.css $DEPLOYPATH
+    - /bin/cp -f script.js $DEPLOYPATH
+    - /bin/cp -f escudo.png $DEPLOYPATH
+    - /bin/cp -f foto-autoridade.jpg $DEPLOYPATH
+    - /bin/cp -f foto-hero.jpg $DEPLOYPATH
