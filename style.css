@@ -1836,4 +1836,30 @@ a   { text-decoration: none; color: inherit; }
   .authority-quote { padding: 18px 20px; }
   .ty-btn { min-width: auto; width: 100%; }
   #thank-you { padding: 60px 0; }
+
+  .whatsapp-float { width: 52px; height: 52px; bottom: 16px; right: 16px; }
+  .whatsapp-float svg { width: 28px; height: 28px; }
 }
+
+/* =============================================
+   BOTÃO FLUTUANTE WHATSAPP
+============================================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,.28);
+  z-index: 999;
+  transition: transform .2s ease;
+}
+
+.whatsapp-float:hover { transform: scale(1.08); }
+
+.whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
